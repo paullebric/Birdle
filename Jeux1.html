@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Birdle Play</title>
+    <link href="play.css" rel ="stylesheet">
+    <link rel ="shortcut icon" type ="image/jpeg" href="img/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,
+    wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;
+    1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <script src="main.js"></script>    
+</head>
+
+<body class="play_body">
+    <header>
+        <div class="conteneur_jeux">
+            <a href="Jeux2.html" class="bouton_jeux">
+                <div>Birdle : Image flou</div>
+            </a>
+            <a href="Jeux3.html" class="bouton_jeux">
+                <div>Birdle : ...</div>
+            </a>
+        </div>
+        <h1>Birdle : Charactéristiques</h1>
+    </header>
+    <main>
+        <section>
+            <p class="explication">Les règles du jeu sont simple : rentre le nom d'un oiseau, 
+                si la famille, l'ordre, la couleur principale ou la couleur
+                secondaire sont en comun avec l'oiseau du jour alors ca s'affiche en vert.
+                <br>
+                Si une lettre du nom de ton oiseau est commune et a la même place que dans
+                dans le nom de l'oiseau du jour elle s'affiche en <em class="vert">vert</em> sinon elle s'affiche en <em class="rouge">rouge</em>.
+            </p>
+        </section>
+        <section>
+            <form action="" method="post">
+                <input type="text" name="nom_oiseau" placeholder="Ecris un nom d'oiseau" id="input_jeux1" onkeyup="input_bird_keyup(event)" autocomplete="off">
+            </form>
+            <select id="suggestions"></select>
+        </section>
+        <section>
+            <div class="conteneur_characteristique">
+                <div class="charactere">Nom</div>
+                <div class="charactere">Nom scientifique</div>
+                <div class="charactere">Famille</div>
+                <div class="charactere">Ordre</div>
+                <div class="charactere">Couleur Principale</div>
+                <div class="charactere">Couleur Secondaire</div>
+            </div>
+            <div id="output_jeux1"></div>
+            <div id="win">Tu as gagné</div>
+        </section>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <a href="index.html" class="link">Retourner à l'Accueil</a>
+        <a href="#haut de la page" class="link">Retourner en haut de la page</a>
+        <p class="credit">Autheurs du site Paul et Phileas   ===>   <a href="https://www.instagram.com/pololecasseurdefiak/" class="contact">Contact</a></a></p>
+    </footer>
+    <script type="py" src="./main.py" config="./pyscript.json"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+.calistoga-regular {
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.play_body{
+    font-family: "Roboto-black";
+    text-align: center;
+    background-image: url("img/background_index.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.index_body{
+    font-family: "Roboto-black";
+    text-align: center;
+    background-image: url("img/background_play.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+h1{
+    font-family: "Calistoga";
+    color:black;
+    font-size: 3.5em;
+    background-size: contain;
+    background-repeat:no-repeat ;
+    background-position: center;
+    text-shadow: 6px 6px 0px gray;
+}
+h1:hover{
+  transform: scale(1.02);
+}
+em{
+  font-style: normal;
+}
+
+.explication{
+    font-size: 1.2em;
+    font-family: "roboto-bold";
+    font-weight: 800;
+    padding: 0.5%;
+    border : 2px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+    margin:auto;
+    width:90%;
+    opacity: 85%;
+}
+.explication:hover{
+  opacity: 100%;
+}
+
+.link {
+    font:bold;
+    text-decoration: none;
+    color :black;
+    display:inline-block;
+    border:0px black solid;
+    border-radius: 15px;
+    background-color: rgb(206, 206, 206);
+    padding:0.20%;
+    opacity: 80%;
+    box-shadow: 0px 0px 20px rgb(206, 206, 206);
+}
+
+.link:hover{
+  transform: scale(1.02);
+  font-weight: 600;
+  text-decoration: underline;
+}
+.contact:hover{
+  text-decoration: underline;
+  font-weight:600;
+}
+.vert{
+    color:green;
+}
+
+.rouge{
+    color:rgb(150, 28, 28);
+}
+.credit{
+  font-size: 0.8em;
+  font-style: italic;
+  color:gray;
+  text-align: left;
+}
+a{
+  color:black;
+  text-decoration: none;
+}
+.play{
+  font-family: "calistoga";
+  font-size: 2em;
+  font-weight: 800;
+  border:5px solid;
+  border-radius: 30px;
+  width:40%;
+  margin:auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background: radial-gradient(circle, #faee48 20%, #efa767 40%, #ea5e5e 80%);
+  opacity: 80%;
+}
+
+.play:hover{
+  transform:scale(1.1);
+  opacity: 100%;
+}
+
+
+.conteneur_jeux{
+  display:flex;
+  flex-direction: row;
+}
+
+.bouton_jeux{
+  font-family: "calistoga";
+  font-size: 1.2em;
+  font-weight: 800;
+  border:5px solid;
+  border-radius: 30px;
+  width:45%;
+  margin:auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background: radial-gradient(circle, #fffd71 20%, #fda9a9 40%, #e54848 80%);
+  opacity: 80%;
+}
+
+.bouton_jeux:hover{
+  color:black;
+  text-decoration: none;
+  transform:scale(1.1);
+  opacity: 100%;
+}
+
+.conteneur_characteristique{
+  display:grid;
+  grid-template-columns: 1.2fr 1.2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr /*a_modifier pour que ca change en fonction du nb de ligne(nb de guess)*/;
+  margin-top: 0.15%;
+  margin-bottom: 0.15%;
+}
+.charactere{
+  display: flex;
+  font-size: 1.1em;
+  font-weight:800;
+  border:3px black solid;
+  border-radius: 3px;
+  background-color: grey;
+  opacity: 82%;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  width:92%;
+}
+
+.charactere:hover{
+  transform:scale(1.05);
+  opacity: 100%; 
+}
+
+input{
+  font-size: 1.3em;
+  text-align: center;
+  display:flexbox;
+  border: 3px black solid;
+  border-radius: 8px;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  opacity: 92%;
+}
+
+input:hover{
+  transform:scale(1.05);
+  opacity:100%;
+}
+
+input:focus{
+  transform:scale(1.07);
+  opacity:100%;
+  border: 4px blue solid;
+}
+#suggestions{
+  margin-top: 0%;
+  margin-bottom:1%;
+  background-color: #ea5e5e;
+  font-size:1.2em;
+  border: 3px solid black;
+  border-radius: 7px;
+  display:none;
+  position: relative; /* Position absolue */
+  top: 100%; /* Position en dessous de l'élément <input> */
+  left: 50%; /* Centrage horizontal */
+  transform: translateX(-50%)
+}
+#win{
+  border: black solid 10px;
+  position: fixed;
+  width: auto;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: green;
+  font-size: 2.5em;
+  font-family: "calistoga";
+  text-shadow: 5px 5px 0px grey;
+  padding: 1%;
+  display:none;
+}
